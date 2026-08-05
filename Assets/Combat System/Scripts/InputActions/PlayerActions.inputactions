@@ -8,11 +8,11 @@
             "actions": [
                 {
                     "name": "TileMovement",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "11d6c56c-1f1b-4ff3-8348-caff9552345b",
-                    "expectedControlType": "",
+                    "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Hold(duration=0.15)",
                     "initialStateCheck": true
                 }
             ],
@@ -181,6 +181,76 @@
                     "action": "TileMovement",
                     "isComposite": false,
                     "isPartOfComposite": true
+                }
+            ]
+        },
+        {
+            "name": "Attack",
+            "id": "c849dade-b445-42f5-93ed-cd59432f9996",
+            "actions": [
+                {
+                    "name": "Ranged Attack",
+                    "type": "Button",
+                    "id": "79a237ef-60d0-4236-b831-a13080213c01",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Melee Attack",
+                    "type": "Button",
+                    "id": "44465846-632e-4439-a73f-f946af890e56",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b32db366-6f71-43c1-9c18-1e571a3fc227",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Ranged Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "371cf942-fede-4e85-903b-ca468d8ecd04",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Ranged Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1befba1e-314d-4658-8af7-f708f6c33c4b",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Melee Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c8aaaf34-d076-45c5-8470-aecad75414d5",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Melee Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
