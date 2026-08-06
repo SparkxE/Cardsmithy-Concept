@@ -153,9 +153,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyList:
-  - {fileID: 8068589428734277748, guid: 27bf31f6833d5b742a6b7841e983dd6b, type: 3}
-  - {fileID: 5008534755244437952, guid: 45075b6f428ffe04e9c20aef94eefdd0, type: 3}
-  - {fileID: 8048524908834707888, guid: 6dab528ea53eeba489429a176c686bf4, type: 3}
+  - {fileID: 7797353095600405664, guid: 7831bfcb71cf1e349a9b6788a794aff3, type: 3}
+  - {fileID: 2934967205718628023, guid: 74534399ec64fba4bb365d35a12eb5f9, type: 3}
+  - {fileID: 5483694630065562632, guid: b4abd7c5f81f945429d72c0b8aa77d5d, type: 3}
   startPosition: {fileID: 909680288}
 --- !u!4 &159507978
 Transform:
