@@ -232,6 +232,17 @@
                 },
                 {
                     "name": "",
+                    "id": "1f9a1707-7e5a-430c-8abb-04e5638d0a03",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Ranged Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "1befba1e-314d-4658-8af7-f708f6c33c4b",
                     "path": "<Keyboard>/r",
                     "interactions": "",
@@ -245,6 +256,17 @@
                     "name": "",
                     "id": "c8aaaf34-d076-45c5-8470-aecad75414d5",
                     "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Melee Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d792549b-2bb0-4912-b3cc-bad48d1e79e4",
+                    "path": "<Keyboard>/rightCtrl",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
