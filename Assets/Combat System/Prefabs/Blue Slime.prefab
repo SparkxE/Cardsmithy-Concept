@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 152140750645102379}
   - component: {fileID: 1983808293381866083}
   - component: {fileID: 803935889973643503}
+  - component: {fileID: 5991286739954944122}
   m_Layer: 0
   m_Name: Blue Slime
   m_TagString: Untagged
@@ -96,7 +97,7 @@ Animator:
   m_GameObject: {fileID: 7797353095600405664}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 68555cc7381816a4b8e2742db37c34de, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3f7b75cf62877454c97762359dc90c1e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -152,3 +153,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &5991286739954944122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7797353095600405664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4c25d1e80e3b1b49903c8a96cbde3d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1983808293381866083}

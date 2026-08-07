@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4193353922510134342}
   - component: {fileID: 6125000333366334879}
   - component: {fileID: 3657745096990796903}
+  - component: {fileID: 3632278717374534548}
   m_Layer: 0
   m_Name: Red Slime
   m_TagString: Untagged
@@ -96,7 +97,7 @@ Animator:
   m_GameObject: {fileID: 5483694630065562632}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: dfdb4d2f80da0fd449348e31347bc646, type: 2}
+  m_Controller: {fileID: 9100000, guid: 095cbd241e59fff48b2c4103a0e9af9d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -152,3 +153,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &3632278717374534548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5483694630065562632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4c25d1e80e3b1b49903c8a96cbde3d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 6125000333366334879}
