@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private double timeSincePress = 0; //time counter since most recent movement button press
     private PlayerActions playerActions; //playerActions action map for reading movement inputs
     private Vector2 currentInput; //current directional input
+    private bool attackDelay = false; //whether or not an attack animation is active
 
     //tile ID "spacing"
     [SerializeField] private int tileSpaceVert = 3;
@@ -22,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform startPosition;
     [SerializeField] private float moveSpacing = 0;
     [SerializeField] private float startBuffer = 0;
+    [SerializeField] private float attackBuffer = 0f;
 
     // Start is called before the first frame update
     // ensure player is located at startPosition regardless of editor position, 
@@ -40,7 +42,10 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         //increment time since movement pressed & check for valid movement input
-        timeSincePress += Time.fixedDeltaTime;
+        if (attackDelay == false)
+        {
+            timeSincePress += Time.fixedDeltaTime;
+        }
         GetInput();
         if (currentInput != Vector2.zero)
         {
@@ -48,8 +53,26 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    // if attack input is received, reset time count and delay when it can be incremented to prevent 
+    // movement during an attack
+    public void AttackState(InputAction.CallbackContext context)
+    {
+        if (attackDelay == false)
+        {
+            timeSincePress = 0;
+            attackDelay = true;
+            Invoke("ResetDelay", attackBuffer);
+        }
+    }
+
+    public bool AttackDelay
+    {
+        get { return attackDelay; }
+    }
+
     private void GetInput()
     {
+        // check for movement inputs from InputActions component
         currentInput = playerActions.Movement.TileMovement.ReadValue<Vector2>();
     }
 
@@ -137,5 +160,11 @@ public class PlayerMovement : MonoBehaviour
     {
         //get details about the current tile
         currentTileState = currentTile.GetComponent<TileStates>();
+    }
+
+    // turn off attack delay
+    private void ResetDelay()
+    {
+        attackDelay = false;
     }
 }
