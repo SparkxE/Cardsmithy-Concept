@@ -53,17 +53,6 @@ public class PlayerMovement : MonoBehaviour
         currentInput = playerActions.Movement.TileMovement.ReadValue<Vector2>();
     }
 
-    // ensure attack input(s) happens after start buffer before firing
-    public void RangedAttack(InputAction.CallbackContext context)
-    {
-        if (Time.fixedTime >= startBuffer && context.phase == InputActionPhase.Started) { Debug.Log("Ranged Attack Fired"); }
-    }
-
-    public void MeleeAttack(InputAction.CallbackContext context)
-    {
-        if (Time.fixedTime >= startBuffer && context.phase == InputActionPhase.Started) { Debug.Log("Melee Attack Fired"); }
-    }
-
     private void Move(Vector2 input)
     {
         if (Time.fixedTime >= startBuffer)  //ensure start window is cleared before performing inputs
