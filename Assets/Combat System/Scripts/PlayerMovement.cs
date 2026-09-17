@@ -51,6 +51,12 @@ public class PlayerMovement : MonoBehaviour
         {
             Move(currentInput);
         }
+
+        // demo quit function for prototype builds
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     // if attack input is received, reset time count and delay when it can be incremented to prevent 
