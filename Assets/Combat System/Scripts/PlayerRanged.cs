@@ -11,9 +11,7 @@ public class PlayerRanged : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("spawned");
         rigidBody = gameObject.GetComponent<Rigidbody2D>();
-        // rigidBody.AddForce(Vector2.right * projectileSpeed, ForceMode2D.Impulse);
         rigidBody.velocity += Vector2.right * projectileSpeed;
         Destroy(gameObject, 1f);    //self-destruct if no enemy contacted
     }
