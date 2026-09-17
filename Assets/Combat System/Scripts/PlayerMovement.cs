@@ -65,11 +65,6 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    public bool AttackDelay
-    {
-        get { return attackDelay; }
-    }
-
     private void GetInput()
     {
         // check for movement inputs from InputActions component
@@ -166,5 +161,15 @@ public class PlayerMovement : MonoBehaviour
     private void ResetDelay()
     {
         attackDelay = false;
+    }
+
+    // public gets to grab values for other scripts
+    public bool AttackDelay
+    {
+        get { return attackDelay; }
+    }
+    public float StartBuffer
+    {
+        get { return startBuffer; }
     }
 }
