@@ -375,7 +375,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06b7207a570d1454f915c0b74e98fa41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startBuffer: 2
   rangedProjectile: {fileID: 7751659656147775020, guid: a8acde6c147190a4ea44cc9be9189f1b, type: 3}
   meleeSwipe: {fileID: 629555653182789168, guid: f0b244778a36a2c4da8f80b4e7c9e919, type: 3}
 --- !u!1 &519420028
@@ -1181,6 +1180,10 @@ PrefabInstance:
     - target: {fileID: 7309531497264888870, guid: d7d7ba827ed4cb545a3096e0f51ad312, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7309531497264888870, guid: d7d7ba827ed4cb545a3096e0f51ad312, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7556869039861178068, guid: d7d7ba827ed4cb545a3096e0f51ad312, type: 3}
       propertyPath: m_Size.y
